@@ -1,6 +1,6 @@
 \paper {
   max-systems-per-page = 6
-  page-count = 1
+sgjh  page-count = 1
 }
 \header{
    composer          = "Johann Sebastian Bach (1685-1750)"
