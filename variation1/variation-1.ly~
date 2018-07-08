@@ -1,0 +1,56 @@
+#(ly:set-option 'old-relative)
+\header {
+  enteredby = 	"Allen Garvin"
+  maintainer = 	"Allen Garvin"
+  maintainerEmail = "AGarvin@tribalddb.com"
+  copyright = 	"Public Domain"
+  filename = 	"bach-invention-04.ly"
+  title = 	"Invention 4"
+  opus = 	"BWV 775"
+  composer =	"Johann Sebastian Bach (1685-1750)"
+  style =	"Baroque"
+  source =	"Bach-Gesellschaft"
+  lastupdated =	"2003/May/17"
+
+  mutopiainstrument = "Harpsichord, Piano"
+  mutopiatitle =      "Invention 4"
+  mutopiacomposer =   "BachJS"
+  mutopiaopus =       "BWV 775"
+
+ footer = "Mutopia-2008/06/15-67"
+
+
+}
+
+\version "2.11.46"
+
+voiceone =  \relative b {
+
+}
+
+  
+voicetwo =  \relative c' {
+
+}
+
+\score {
+   \context GrandStaff << 
+    \context Staff = "one" <<
+      \voiceone
+    >>
+    \context Staff = "two" <<
+      \voicetwo
+    >>
+  >>
+
+  \layout{ }
+  
+  \midi {
+    \context {
+      \Score
+      tempoWholesPerMinute = #(ly:make-moment 90 4)
+      }
+    }
+
+
+}
