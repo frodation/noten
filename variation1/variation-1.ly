@@ -1,22 +1,13 @@
 #(ly:set-option 'old-relative)
 \header {
   enteredby = 	"Allen Garvin"
-  maintainerEmail = "AGarvin@tribalddb.com"
   copyright = 	"Public Domain"
   filename = 	"variation-1.ly"
-  title = 	"Invention 4"
+  title = 	"Variation 1"
   opus = 	"BWV 988"
   composer =	"Johann Sebastian Bach (1685-1750)"
-  style =	"Baroque"
-  source =	"Bach-Gesellschaft"
-  lastupdated =	""
 
-  mutopiainstrument = "Harpsichord, Piano"
-  mutopiatitle =      "Invention 4"
-  mutopiacomposer =   "BachJS"
-  mutopiaopus =       "BWV 775"
-
- footer = "Mutopia-2008/06/15-67"
+ footer = "The freedom of press belongs to those who own one."
 
 
 }
@@ -28,11 +19,11 @@ voiceone =  \relative b {
     \override Script #'padding = #1.0
     \repeat volta 2 { %begin repeated section
         %1-5
-         g16 fis16 g8_~ g16 d16 e16 fis16 g16 a16 b16 cis16
+         g'	16 fis16 g8_~ g16 d16 e16 fis16 g16 a16 b16 cis16
          d16 cis16 d8^~ d16 a16 b16 cis16 d16 e16 fis16 d16
         g16 fis16 g8^~ g16 fis16 e16 d16  cis16 e16 a,16 g16
         fis16 e16 d16 cis16  d16 fis16   a16  g16  fis16 a16 d8
-          b'8\rest d16[ c16 d8 g,8 b,8 d'8]
+          b8\rest d16[ c16 d8 g,8 b,8 d'8]
 
         %6-10
         b8\rest e16[ d16 e8 a,8 c,8 e'8]
@@ -79,7 +70,7 @@ voiceone =  \relative b {
 }
 
   
-voicetwo =  \relative c' {
+voicetwo =  \relative c'{ 
 
         \override Script #'padding = #1.0
         %1-5
