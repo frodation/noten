@@ -13,7 +13,7 @@
 voiceconsts = {
   \key b \major
   \time 4/4
-  \clef "bass"
+  \clef "treble"
   \numericTimeSignature
   \compressFullBarRests
   % Set default beaming for all staves
@@ -42,13 +42,13 @@ music = \new StaffGroup <<
       \new Staff {
         \set Staff.midiInstrument = \mist
         \set Staff.instrumentName = \markup \center-column { "Violon-" "cello I" }
-        \transpose b b,, { \va }
+        \transpose b c {\transpose b b { \va }}
       }
 
       \new Staff {
         \set Staff.midiInstrument = \mist
         \set Staff.instrumentName = \markup \center-column { "Violon-" "cello II" }
-        \transpose b b,, { \vb }
+        \transpose es c {\transpose b b { \vb }}
       }
 >>
 
