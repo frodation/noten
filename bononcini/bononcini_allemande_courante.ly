@@ -23,11 +23,11 @@ voiceconsts = {
 
 }
 
-%mihi = "clarinet"
-mihi = "harpsichord"
+mihi = "clarinet"
+%mihi = "harpsichord"
 %mist = "string ensemble 1"
-mist = "harpsichord"
-miba = "harpsichord"
+%mist = "harpsichord"
+miba = "alto sax"
 %mikl = "acoustic grand"
 
 simi = \markup \italic "simile"
@@ -40,15 +40,15 @@ introb = { \break \tempo "2. Courante " 4=160 \time 6/4 \key c \major }
 
 music = \new StaffGroup <<
       \new Staff {
-        \set Staff.midiInstrument = \mist
+        \set Staff.midiInstrument = \mihi
         \set Staff.instrumentName = \markup \center-column { "Violon-" "cello I" }
-        \transpose b c {\transpose b b { \va }}
+        \transpose c c {\transpose b b { \va }}
       }
 
       \new Staff {
-        \set Staff.midiInstrument = \mist
+        \set Staff.midiInstrument = \miba
         \set Staff.instrumentName = \markup \center-column { "Violon-" "cello II" }
-        \transpose es c {\transpose b b { \vb }}
+        \transpose c c {\transpose b b { \vb }}
       }
 >>
 

@@ -1,0 +1,23 @@
+* free soundfonts
+https://cymatics.fm/blog/soundfonts/
+* What to do with the sf2 files
+Supposed we have a lot of sf2 files ind /home/ubuntu/midi/, in
+/etc/timidity/timidity.cfg we add a line:
+
+source /home/ubuntu/midi/midi.cfg
+
+midi.cfg could look like this:
+
+dir /home/ubuntu/midi/
+source /home/ubuntu/midi/sax-cla.cfg
+
+My sax-cla.cfg:
+
+dir /home/ubuntu/midi/
+
+bank 0
+
+65 %font sax2.sf2 0 0 
+71 %font cla2.sf2 0 71 
+
+To find the right numbers, we can use swami.
