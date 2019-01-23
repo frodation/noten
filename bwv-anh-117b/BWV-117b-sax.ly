@@ -117,12 +117,12 @@ voicetwo = \relative f
     \new Staff
     {
     \set Staff.midiInstrument = "clarinet"
-    \naturalizeMusic {\transpose ef c \voiceone}
+    \naturalizeMusic {\transpose es c \voiceone}
     }
     \new Staff
     {
     \set Staff.midiInstrument = "clarinet"
-    \naturalizeMusic {\transpose ef c'' \voicetwo}
+    \naturalizeMusic {\naturalizeMusic {\transpose es c'' \voicetwo}}
     }
   >>
   
