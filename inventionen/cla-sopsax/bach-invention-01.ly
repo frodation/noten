@@ -30,14 +30,14 @@ voiceconsts = {
  \clef "treble"
 % \numericTimeSignature
 % \compressFullBarRests
-\tempo  4=60
+% \tempo  4=60
 }
 
 voiceone =
 \relative c'' {
   \voiceconsts
-   r16  c[ d e]   f[ d e c]  g8[ c b^\prall c]              | % 1
-   d,16[ g, a b]  c[ a b g]  d'8[ g f^\prall g]               | % 2
+   r16  c[ d e]   f[ d e c]  g'8[ c b^\prall c]              | % 1
+   d16[ g, a b]  c[ a b g]  d'8[ g f^\prall g]               | % 2
    e16[ a g f]  e[ g f a]  g[ f e d]  c[ e d f]              | % 3
    e[ d c b]  a[ c b d]  c[ b a g]  fis[ a g b]              | % 4
    a8[ d,]  c'8.[^\mordent d16]  b[ a g fis]  e[ g fis a]    | % 5
@@ -67,7 +67,7 @@ voicetwo =
    \voiceconsts
    \clef "treble"
 
-      r2          r16   c[ d e]  f[ d e c]                      | % 1
+   r2 r16 c[ d e]  f[ d e c]                      | % 1
    g'8[ g,] r4 r16  g'[ a b]  c[ a b g]                      | % 2
    c8[ b c d]  e[ g, a b]                                    | % 3
    c[ e, fis g]  a[ b] c4 ~                                  | % 4
@@ -75,12 +75,12 @@ voicetwo =
    e[ fis g e]  b8.[ c16]  d8[ d,]                           | % 6
    r16  g[ a b]  c[ a b g]  d'8[ g fis g]                    | % 7
    a16[ d, e fis]  g[ e fis d]  a'8[ d c d]                  | % 8
-   g,,16[ g' f e]  d[ f e g]  f8[ e f d]       | % 9
+   g,16[ g' f e]  d[ f e g]  f8[ e f d]       | % 9
    e16[ a g f]  e[ g f a]  g8[ f g e]                        | % 10
    f16[ bes a g]  f[ a g bes]  a[ g f e]  d[ f e g]          | % 11
    f[ e d c]  b[ d c e]  d[ c b a]  gis[ b a c]              | % 12
 
-   b8[ e]  d'8.[^\mordent e16]  c[ b a g!]  fis[ a gis b]   | % 13
+   b,8[ e]  d'8.[^\mordent e16]  c[ b a g!]  fis[ a gis b]   | % 13
    a[ c b d]  c[ e d f]  e8[ a, e' e,]                       | % 14
    a8[ a,] r4 r16  e''16[ d c]  b[ d cis e]                  | % 15
    d2 ~  d16[ a b c]    d[ b c a]                            | % 16
@@ -96,14 +96,14 @@ voicetwo =
 music = \new StaffGroup <<
   \new Staff {
     	\set Staff.midiInstrument = "bassoon"
-	\set Staff.instrumentName = #"Saxophon"
-	\transpose es c' { \voiceone }
+	\set Staff.instrumentName = #"Sopransax"
+	\transpose bes c { \voiceone }
       }
 
       \new Staff {
     	\set Staff.midiInstrument = "bassoon"
-	\set Staff.instrumentName = #"Saxophon"
-	\transpose es c' { \voicetwo }
+	\set Staff.instrumentName = #"Klarinette"
+	\transpose bes c' { \voicetwo }
       }
 >>
 
