@@ -127,7 +127,7 @@ voicetwo = \relative a
     \new Staff
     {
     \set Staff.midiInstrument = "clarinet"
-    \naturalizeMusic {\transpose bf c \voiceone}
+    \naturalizeMusic {\transpose bf c' \voiceone}
     }
     \new Staff
     {
